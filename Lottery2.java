@@ -10,7 +10,7 @@ public class Lottery2 {
 		System.out.println("Please, which is the quantity of numbers of the prize draw? ");
 		int tamanho = scan.nextInt();
 		while (tamanho <= 0 || tamanho > 10) {
-			System.out.println("Limit of number quantity exceeded.\nPlease, tell me again, which is the quantity of "
+			System.out.println("Limit of number quantity (10) exceeded.\nPlease, tell me again, which is the quantity of "
 					+ "numbers of the prize draw?");
 			tamanho = scan.nextInt();
 
@@ -52,9 +52,9 @@ public class Lottery2 {
 		
 		if (flag == 1) {
 		
-		System.out.format("Mudou %d vezes.", cont);
-		System.out.format("\nA posicao %d trocou com %d\n", new_i, new_j);
-		System.out.format("Old value = %d and new value = %d", val1, val2);
+		System.out.format("Repeated numbers had changed %d time(s).", cont);
+		System.out.format("\nThe position %d has switched with %d.\n", new_i, new_j);
+		System.out.format("Old value was %d and the new value is %d.", val1, val2);
 		
 			}
 		}
