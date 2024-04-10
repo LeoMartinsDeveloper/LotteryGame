@@ -7,11 +7,11 @@ public class Lottery2 {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Please, which is the quantity of numbers of the prize draw? ");
+		System.out.println("Please, which is the quantity of numbers of the prize draw? (between 1 and 10) ");
 		int tamanho = scan.nextInt();
 		while (tamanho <= 0 || tamanho > 10) {
 			System.out.println("Limit of number quantity (10) exceeded.\nPlease, tell me again, which is the quantity of "
-					+ "numbers of the prize draw?");
+					+ "numbers of the prize draw? (between 1 and 10)");
 			tamanho = scan.nextInt();
 
 		}
@@ -53,7 +53,7 @@ public class Lottery2 {
 		if (flag == 1) {
 		
 		System.out.format("Repeated numbers had changed %d time(s).", cont);
-		System.out.format("\nThe position %d has switched with %d.\n", new_i, new_j);
+		System.out.format("\nThe position %d has switched with position %d.\n", new_i, new_j);
 		System.out.format("Old value was %d and the new value is %d.", val1, val2);
 		
 			}
